@@ -40,7 +40,7 @@ int main(){
             printf("El fichero esta vacio\n");
         }
         else{
-            Simul_RAM[contador_caracteres_RAM]=fdgetc(fd);
+            Simul_RAM[contador_caracteres_RAM]=fgetc(fd);
             contador_caracteres_RAM++;
             while(fgetc(fd)!=EOF){
                 Simul_RAM[contador_caracteres_RAM]=fdgetc(fd);
@@ -56,7 +56,7 @@ int main(){
     else{
         for(int i=0;i<NUM_FILAS;i++){
             ParsearDireccion(atoi(HexToBin(LeelineaDinamicaFichero(fd))),&ETQ,&palabra,&linea,&bloque);
-            if(atoi(HextoBin(tbl[i].ETQ))==ETQ){
+            if(atoi(HexToBin(tbl[i].ETQ))==ETQ){
                 printf("T: %d, Acierto de CACHE, ADDR %04X Label%X linea %02X palabra %02X DATO %02X",globaltime,LeelineaDinamicaFichero(fd),ETQ,linea,tbl[i].Data);
             }
             else{
@@ -248,7 +248,7 @@ char * HexToBin(char* hexdec){
         }
         i++;
     }
-    return addr;
+    return &addr;
 }
 
 //LEER UNA LINEA DE UN FICHERO
