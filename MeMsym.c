@@ -72,6 +72,7 @@ int main(){
     return 0;
 }
 
+//LIMPIAR LA CACHE
 void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]){
     for(int i=0;i<NUM_FILAS;i++){
         tbl[i].ETQ='FF';
@@ -81,6 +82,7 @@ void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]){
     }
 }
 
+//IMPRIMIR LA CACHE
 void VolcarCACHE(T_CACHE_LINE *tbl){
     for(int i=0;i<NUM_FILAS;i++){
         printf("%c",tbl[i].ETQ);
@@ -90,6 +92,7 @@ void VolcarCACHE(T_CACHE_LINE *tbl){
     }
 }
 
+//INTERPRETACION DE LA DIRECCION DE MEMORIA
 void ParsearDireccion(unsigned int addr, int *ETQ, int*palabra, int *linea, int *bloque){
     *palabra=addr & 0b1111;
     *bloque=addr>>4;
@@ -97,6 +100,7 @@ void ParsearDireccion(unsigned int addr, int *ETQ, int*palabra, int *linea, int 
     *ETQ=*linea>>3; 
 }
 
+//TRATAR FALLO DE LA CACHE
 void TratarFallo(T_CACHE_LINE *tbl, char *MRAM, int ETQ,int linea, int bloque){
     printf("Cargando el bloque %02X en la linea %02X",bloque,linea);
     for(int i=4096-linea*16;i>4096-(linea+1)*16;i--){
@@ -105,6 +109,8 @@ void TratarFallo(T_CACHE_LINE *tbl, char *MRAM, int ETQ,int linea, int bloque){
     
     tbl[linea].ETQ=ETQ;
 }
+
+//PASAR DE BINARIO A HEXADECIMAL
 char *BinToHex(int bin){
     int resto;
     int hexadecimalval=0;
@@ -117,6 +123,8 @@ char *BinToHex(int bin){
     }
     return itoa(hexadecimalval);
 }
+
+//PASAR DE HEXADECIMAL A BINARIO
 char * HexToBin(char* hexdec){ 
     int i=0;
     int contador=2;
@@ -243,6 +251,7 @@ char * HexToBin(char* hexdec){
     return addr;
 }
 
+//LEER UNA LINEA DE UN FICHERO
 char *LeelineaDinamicaFichero(FILE *fd){
     int contador=0,numbloque=1;
     char caracter,*linea;
