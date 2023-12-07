@@ -248,7 +248,7 @@ char * HexToBin(char* hexdec){
         }
         i++;
     }
-    return &addr;
+    return addr;
 }
 
 //LEER UNA LINEA DE UN FICHERO
