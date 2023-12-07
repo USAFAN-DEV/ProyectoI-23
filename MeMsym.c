@@ -75,9 +75,9 @@ int main(){
 //LIMPIAR LA CACHE
 void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]){
     for(int i=0;i<NUM_FILAS;i++){
-        tbl[i].ETQ='FF';
+        tbl[i].ETQ=' ';
         for(int j=0;j<TAM_LINEA;j++){
-            tbl[i].Data[j]='23';
+            tbl[i].Data[j]='#';
         }
     }
 }
