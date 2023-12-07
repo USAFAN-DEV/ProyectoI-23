@@ -43,7 +43,7 @@ int main(){
             Simul_RAM[contador_caracteres_RAM]=fgetc(fd);
             contador_caracteres_RAM++;
             while(fgetc(fd)!=EOF){
-                Simul_RAM[contador_caracteres_RAM]=fdgetc(fd);
+                Simul_RAM[contador_caracteres_RAM]=fgetc(fd);
                 contador_caracteres_RAM++;
             }
         }
