@@ -9,7 +9,7 @@ typedef struct {
     unsigned char Data[TAM_LINEA];
 } T_CACHE_LINE;
 
-char *leelineaDinamicaFichero(FILE *fd);
+char *LeelineaDinamicaFichero(FILE *fd);
 char *HexToBin(char* hexdec);
 char *BinToHex(int bin);
 void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]);
