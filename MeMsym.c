@@ -75,7 +75,6 @@ int main(){
 
             if((tbl[linea].ETQ) == ETQ){
                 printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,ETQ,linea,palabra,tbl[linea].Data[palabra]);
-                globaltime+=1;
                 texto[contador_texto_cache] = tbl[linea].Data[palabra];
                 contador_texto_cache++;
 
@@ -86,12 +85,13 @@ int main(){
                 globaltime+=20;
                 TratarFallo(tbl,Simul_RAM,ETQ,linea,bloque);
                 printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,tbl[linea].ETQ,linea,palabra,tbl[linea].Data[palabra]);
-                globaltime+=1;
                 texto[contador_texto_cache] = tbl[linea].Data[palabra];
                 contador_texto_cache++;
                 VolcarCACHE(tbl);
 
             }
+            sleep(1);
+            globaltime+=1;
             
         }
     }
