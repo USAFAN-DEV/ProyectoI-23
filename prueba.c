@@ -14,7 +14,6 @@ typedef struct {
 
 char *LeelineaDinamicaFichero(FILE *fd);
 char *HexToBin(char* hexdec);
-char *BinToHex(int bin);
 void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]);
 void VolcarCACHE(T_CACHE_LINE *tbl);
 void ParsearDireccion(long unsigned int addr, int *ETQ, int*palabra, int *linea, int *bloque);
@@ -73,7 +72,7 @@ int main(){
             addr = strtol(addrStr, NULL, 16);
             ParsearDireccion(addr,&ETQ,&palabra,&linea,&bloque);
 
-            if((tbl[i].ETQ) == ETQ){
+            if((tbl[i].ETQ) == ETQ){//TODO
                 printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,ETQ,linea,tbl[i].Data);
             }
             else{
@@ -97,7 +96,7 @@ int main(){
     }
     fclose(fd);
     
-    printf("\n\nAccesos totales: %d, Numero de fallos: %d", 14, numfallos);
+    printf("\n\nAccesos totales: %d, Numero de fallos: %d, tiempo medio: %f", 14, numfallos, (float)globaltime/14);
 
     fd=fopen("CONTENTS_CACHE.bin","w");
     for(int i=0;i<NUM_FILAS;i++){
