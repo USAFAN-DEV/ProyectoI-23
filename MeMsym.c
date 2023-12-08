@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define TAMBLOQUE 5
-#define TAM_LINEA 16 
-#define NUM_FILAS 8
+
+#define TAMBLOQUE 5 //Constante utilizada en la funcion LeelineaDinamicaFichero.
+#define TAM_LINEA 16 //Constante. Tamaño de las líneas de las direcciones de memoria
+#define NUM_FILAS 8 //Constante. Número de líneas de la caché
 
 typedef struct {
     unsigned char ETQ;
@@ -72,39 +73,32 @@ int main(){
             addr = strtol(addrStr, NULL, 16);
             ParsearDireccion(addr,&ETQ,&palabra,&linea,&bloque);
 
-            if((tbl[i].ETQ) == ETQ){
-                printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,ETQ,linea,palabra,tbl[linea].Data[0]);
-                printf("\ntexto: ");
-                for(int i = 0; i < TAM_LINEA; i++){
+            if((tbl[linea].ETQ) == ETQ){
+                printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,ETQ,linea,palabra,tbl[linea].Data[palabra]);
+                globaltime+=1;
+                texto[contador_texto_cache] = tbl[linea].Data[palabra];
+                contador_texto_cache++;
 
-                    texto[i] = tbl[linea].Data[i];
-                    printf("%c", texto[i]);
-
-                }
-                printf("\n\n");
             }
             else{
                 numfallos++;
                 printf("T: %d, Fallo de CACHE %d, ADDR %03X Label %X linea %02X palabra %02X bloque %02X\n",globaltime,numfallos,addr,ETQ,linea,palabra,bloque);
                 globaltime+=20;
                 TratarFallo(tbl,Simul_RAM,ETQ,linea,bloque);
-                printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,tbl[linea].ETQ,linea,palabra,tbl[linea].Data[0]);
+                printf("T: %d, Acierto de CACHE, ADDR %03X Label %X linea %02X palabra %02X DATO %02X\n\n",globaltime,addr,tbl[linea].ETQ,linea,palabra,tbl[linea].Data[palabra]);
+                globaltime+=1;
+                texto[contador_texto_cache] = tbl[linea].Data[palabra];
+                contador_texto_cache++;
                 VolcarCACHE(tbl);
-                printf("\ntexto: ");
-                for(int i = 0; i < TAM_LINEA; i++){
 
-                    texto[i] = tbl[linea].Data[i];
-                    printf("%c", texto[i]);
-
-                }
-                printf("\n\n");
             }
-            sleep(1);
+            
         }
     }
     fclose(fd);
     
-    printf("\n\nAccesos totales: %d, Numero de fallos: %d, tiempo medio: %f", 14, numfallos, (float)globaltime/14);
+    printf("\n\nAccesos totales: %d, Numero de fallos: %d, tiempo medio: %.2f", 14, numfallos, (float)globaltime/14);
+    printf("\nTexto: %s", texto);
 
     fd=fopen("CONTENTS_CACHE.bin","w");
     for(int i=0;i<NUM_FILAS;i++){
@@ -294,9 +288,8 @@ void LimpiarCACHE(T_CACHE_LINE tbl[NUM_FILAS]){
 void TratarFallo(T_CACHE_LINE *tbl, char *MRAM, int ETQ,int linea, int bloque){
     int cont = 0;
     printf("Cargando el bloque %02X en la linea %02X\n",bloque,linea);
-    for(int i=4095-linea*16;i>4095-(linea+1)*16;i--){
+    for(int i=bloque*16;i<(bloque+1)*16;i++){
         tbl[linea].Data[cont]=MRAM[i];
-
         cont++;
     }
     
