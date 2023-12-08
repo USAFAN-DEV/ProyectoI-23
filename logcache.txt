@@ -1,204 +1,123 @@
 Existe el fichero
 T: 0, Fallo de CACHE 1, ADDR B2E Label 16 linea 02 palabra 0E bloque B2
 Cargando el bloque B2 en la linea 02
-T: 20, Acierto de CACHE, ADDR B2E Label 16 linea 02 palabra 0E DATO 6E
+T: 20, Acierto de CACHE, ADDR B2E Label 16 linea 02 palabra 0E DATO 6D
 
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-
-texto: nmlkjihgfedcbayx
-
-T: 20, Fallo de CACHE 2, ADDR 434 Label 8 linea 03 palabra 04 bloque 43
+T: 21, Fallo de CACHE 2, ADDR 434 Label 8 linea 03 palabra 04 bloque 43
 Cargando el bloque 43 en la linea 03
-T: 40, Acierto de CACHE, ADDR 434 Label 8 linea 03 palabra 04 DATO 77
+T: 41, Acierto de CACHE, ADDR 434 Label 8 linea 03 palabra 04 DATO 62
 
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+08	Datos: 77	78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
+T: 42, Acierto de CACHE, ADDR 430 Label 8 linea 03 palabra 00 DATO 77
 
-texto: wvutsrqponmlkjih
-
-T: 40, Fallo de CACHE 3, ADDR 430 Label 8 linea 03 palabra 00 bloque 43
-Cargando el bloque 43 en la linea 03
-T: 60, Acierto de CACHE, ADDR 430 Label 8 linea 03 palabra 00 DATO 77
-
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-
-texto: wvutsrqponmlkjih
-
-T: 60, Fallo de CACHE 4, ADDR 598 Label B linea 01 palabra 08 bloque 59
+T: 43, Fallo de CACHE 3, ADDR 598 Label B linea 01 palabra 08 bloque 59
 Cargando el bloque 59 en la linea 01
-T: 80, Acierto de CACHE, ADDR 598 Label B linea 01 palabra 08 DATO 65
+T: 63, Acierto de CACHE, ADDR 598 Label B linea 01 palabra 08 DATO 68
 
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
+0B	Datos: 79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	6F	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+08	Datos: 77	78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
+T: 64, Acierto de CACHE, ADDR 595 Label B linea 01 palabra 05 DATO 65
 
-texto: edcbayxwvutsrqpo
+T: 65, Acierto de CACHE, ADDR 596 Label B linea 01 palabra 06 DATO 66
 
-T: 80, Fallo de CACHE 5, ADDR 595 Label B linea 01 palabra 05 bloque 59
-Cargando el bloque 59 en la linea 01
-T: 100, Acierto de CACHE, ADDR 595 Label B linea 01 palabra 05 DATO 65
-
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-
-texto: edcbayxwvutsrqpo
-
-T: 100, Fallo de CACHE 6, ADDR 596 Label B linea 01 palabra 06 bloque 59
-Cargando el bloque 59 en la linea 01
-T: 120, Acierto de CACHE, ADDR 596 Label B linea 01 palabra 06 DATO 65
-
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-
-texto: edcbayxwvutsrqpo
-
-T: 120, Fallo de CACHE 7, ADDR C77 Label 18 linea 07 palabra 07 bloque C7
+T: 66, Fallo de CACHE 4, ADDR C77 Label 18 linea 07 palabra 07 bloque C7
 Cargando el bloque C7 en la linea 07
-T: 140, Acierto de CACHE, ADDR C77 Label 18 linea 07 palabra 07 DATO 69
+T: 86, Acierto de CACHE, ADDR C77 Label 18 linea 07 palabra 07 DATO 71
 
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
+0B	Datos: 79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	6F	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+08	Datos: 77	78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: ihgfedcbayxwvuts
-
-T: 140, Fallo de CACHE 8, ADDR B09 Label 16 linea 00 palabra 09 bloque B0
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 87, Fallo de CACHE 5, ADDR B09 Label 16 linea 00 palabra 09 bloque B0
 Cargando el bloque B0 en la linea 00
-T: 160, Acierto de CACHE, ADDR B09 Label 16 linea 00 palabra 09 DATO 75
+T: 107, Acierto de CACHE, ADDR B09 Label 16 linea 00 palabra 09 DATO 61
 
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-08	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
+16	Datos: 71	72	73	74	75	76	77	78	79	61	62	63	64	65	66	67	
+0B	Datos: 79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	6F	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+08	Datos: 77	78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: utsrqponmlkjihgf
-
-T: 160, Fallo de CACHE 9, ADDR 63A Label C linea 03 palabra 0A bloque 63
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 108, Fallo de CACHE 6, ADDR 63A Label C linea 03 palabra 0A bloque 63
 Cargando el bloque 63 en la linea 03
-T: 180, Acierto de CACHE, ADDR 63A Label C linea 03 palabra 0A DATO 77
+T: 128, Acierto de CACHE, ADDR 63A Label C linea 03 palabra 0A DATO 74
 
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-0C	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
+16	Datos: 71	72	73	74	75	76	77	78	79	61	62	63	64	65	66	67	
+0B	Datos: 79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	6F	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+0C	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: wvutsrqponmlkjih
-
-T: 180, Fallo de CACHE 10, ADDR FC4 Label 1F linea 04 palabra 04 bloque FC
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 129, Fallo de CACHE 7, ADDR FC4 Label 1F linea 04 palabra 04 bloque FC
 Cargando el bloque FC en la linea 04
-T: 200, Acierto de CACHE, ADDR FC4 Label 1F linea 04 palabra 04 DATO 67
+T: 149, Acierto de CACHE, ADDR FC4 Label 1F linea 04 palabra 04 DATO 6C
 
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-0B	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-0C	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-1F	Datos: 67	66	65	64	63	62	61	79	78	77	76	75	74	73	72	71	
+16	Datos: 71	72	73	74	75	76	77	78	79	61	62	63	64	65	66	67	
+0B	Datos: 79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	6F	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+0C	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+1F	Datos: 68	69	6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: gfedcbayxwvutsrq
-
-T: 200, Fallo de CACHE 11, ADDR 81C Label 10 linea 01 palabra 0C bloque 81
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 150, Fallo de CACHE 8, ADDR 81C Label 10 linea 01 palabra 0C bloque 81
 Cargando el bloque 81 en la linea 01
-T: 220, Acierto de CACHE, ADDR 81C Label 10 linea 01 palabra 0C DATO 65
+T: 170, Acierto de CACHE, ADDR 81C Label 10 linea 01 palabra 0C DATO 62
 
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-10	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-0C	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-1F	Datos: 67	66	65	64	63	62	61	79	78	77	76	75	74	73	72	71	
+16	Datos: 71	72	73	74	75	76	77	78	79	61	62	63	64	65	66	67	
+10	Datos: 6F	70	71	72	73	74	75	76	77	78	79	61	62	63	64	65	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+0C	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+1F	Datos: 68	69	6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 171, Acierto de CACHE, ADDR FC0 Label 1F linea 04 palabra 00 DATO 68
 
-texto: edcbayxwvutsrqpo
+T: 172, Fallo de CACHE 9, ADDR 062 Label 0 linea 06 palabra 02 bloque 06
+Cargando el bloque 06 en la linea 06
+T: 192, Acierto de CACHE, ADDR 062 Label 0 linea 06 palabra 02 DATO 78
 
-T: 220, Fallo de CACHE 12, ADDR FC0 Label 1F linea 04 palabra 00 bloque FC
-Cargando el bloque FC en la linea 04
-T: 240, Acierto de CACHE, ADDR FC0 Label 1F linea 04 palabra 00 DATO 67
-
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-10	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-0C	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-1F	Datos: 67	66	65	64	63	62	61	79	78	77	76	75	74	73	72	71	
+16	Datos: 71	72	73	74	75	76	77	78	79	61	62	63	64	65	66	67	
+10	Datos: 6F	70	71	72	73	74	75	76	77	78	79	61	62	63	64	65	
+16	Datos: 78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	6D	6E	
+0C	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+1F	Datos: 68	69	6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	
 FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: gfedcbayxwvutsrq
-
-T: 240, Acierto de CACHE, ADDR 062 Label 0 linea 06 palabra 02 DATO 23
-
-
-texto: ################
-
-T: 240, Fallo de CACHE 13, ADDR FC6 Label 1F linea 04 palabra 06 bloque FC
-Cargando el bloque FC en la linea 04
-T: 260, Acierto de CACHE, ADDR FC6 Label 1F linea 04 palabra 06 DATO 67
-
-16	Datos: 75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	67	66	
-10	Datos: 65	64	63	62	61	79	78	77	76	75	74	73	72	71	70	6F	
-16	Datos: 6E	6D	6C	6B	6A	69	68	67	66	65	64	63	62	61	79	78	
-0C	Datos: 77	76	75	74	73	72	71	70	6F	6E	6D	6C	6B	6A	69	68	
-1F	Datos: 67	66	65	64	63	62	61	79	78	77	76	75	74	73	72	71	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-FF	Datos: 23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	23	
-18	Datos: 69	68	67	66	65	64	63	62	61	79	78	77	76	75	74	73	
-
-texto: gfedcbayxwvutsrq
+00	Datos: 76	77	78	79	61	62	63	64	65	66	67	68	69	6A	6B	6C	
+18	Datos: 6A	6B	6C	6D	6E	6F	70	71	72	73	74	75	76	77	78	79	
+T: 193, Acierto de CACHE, ADDR FC6 Label 1F linea 04 palabra 06 DATO 6E
 
 
 
-Accesos totales: 14, Numero de fallos: 13, tiempo medio: 18.571428
+Accesos totales: 14, Numero de fallos: 9, tiempo medio: 13.86
+Texto: mbwhefqatlbhxn
