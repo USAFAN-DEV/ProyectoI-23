@@ -56,7 +56,7 @@ int main(){
     else{
         for(int i=0;i<NUM_FILAS;i++){
             ParsearDireccion(atoi(HexToBin(LeelineaDinamicaFichero(fd))),&ETQ,&palabra,&linea,&bloque);
-            if(atoi(HexToBin(tbl[i].ETQ))==ETQ){
+            if((tbl[i].ETQ) == ETQ){
                 printf("T: %d, Acierto de CACHE, ADDR %04X Label%X linea %02X palabra %02X DATO %02X",globaltime,LeelineaDinamicaFichero(fd),ETQ,linea,tbl[i].Data);
             }
             else{
