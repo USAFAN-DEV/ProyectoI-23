@@ -111,7 +111,7 @@ void TratarFallo(T_CACHE_LINE *tbl, char *MRAM, int ETQ,int linea, int bloque){
 }
 
 //PASAR DE BINARIO A HEXADECIMAL
-char *BinToHex(int bin){
+/*char *BinToHex(int bin){
     int resto;
     int hexadecimalval=0;
     int i=1;
@@ -122,13 +122,13 @@ char *BinToHex(int bin){
         bin = bin / 10;
     }
     return itoa(hexadecimalval);
-}
+}*/
 
 //PASAR DE HEXADECIMAL A BINARIO
 char * HexToBin(char* hexdec){ 
     int i=0;
     int contador=2;
-    char addr[14];
+    static char addr[14];
     addr[0]='0';
     addr[1]='b';
     while (hexdec[i]!='\0') {
