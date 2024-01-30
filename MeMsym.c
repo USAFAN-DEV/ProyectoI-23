@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 #define TAMBLOQUE 5 //Constante utilizada en la funcion LeelineaDinamicaFichero.
-#define TAM_LINEA 16 //Constante. Tamaño de las líneas de las direcciones de memoria
+#define TAM_LINEA 16 //Constante. Tamaño de las líneas de la cache / bloques de la memoria RAM
 #define NUM_FILAS 8 //Constante. Número de líneas de la caché
 #define NUM_DIRECCIONES 14 //Constante. Número de direcciones de memoria
 
